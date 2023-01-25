@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { ArrowLeft } from "styled-icons/heroicons-solid";
+import styled,{css} from "styled-components";
+import { ArrowLeft, Email, Home, Notifications, Search } from "../../styles/icons";
 
 export const Container = styled.div`
     display: flex;
@@ -54,4 +54,41 @@ export const ProfileInfo = styled.div`
     }
 
    
+`;
+export const BottomMenu = styled.div`
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background: var(--primary);
+    width: 100%;
+    border-top: 1px solid var(--outline);
+    display: flex;
+    justify-content: space-between;
+    padding:8px min(46px, max(10vw,10px)); //ajustar automaticamente
+    @media(min-width: 500px){ //o bottomMenu n vai aparecer quando o layout tiver mais de 500px
+        display: none;
+    }
+`;
+export const iconCss = css`
+    width: 31px;
+    height: 31px;
+    cursor: pointer;
+    color:var(--gray);
+    &:hover,&.active{
+        fill: var(--twitter);
+
+    }
+`;
+export const HomeIcon = styled(Home)`
+    ${iconCss}
+`;
+export const SearchIcon = styled(Search)`
+    ${iconCss}
+`;
+export const EmailIcon = styled(Email)`
+    ${iconCss}
+`;
+export const BellIcon = styled(Notifications) `
+    ${iconCss}
 `;
