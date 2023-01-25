@@ -1,10 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+import GlobalStyles from './styles/GlobalStyles';
+import Layout from './components/Layout';
 function App() {
   return (
-    <h1>
-          Regiane Marcon
-        </h1>
+    <>
+    <Layout />
+    <GlobalStyles />
+          
+    </>
         
   );
 }
