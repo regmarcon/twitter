@@ -10,10 +10,10 @@ const ProfilePage: React.FC = () => {
             <Avatar />
         </Banner>
         <ProfileData>
-             <EditButton outlined></EditButton> 
+             <EditButton outlined>Editar perfil</EditButton> 
             <h1>Regiane marcon</h1>
             <h2>@regmarcon</h2>
-            <p>Deveolper
+            <p>Developer
                 <a href="#"></a>
             </p>
             <ul>

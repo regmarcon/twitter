@@ -7,14 +7,13 @@ import React from 'react';
 const Feed: React.FC = () => {
   return (
     <Container>
-        <Tab>Tweets
-                <Tweets>
+        <Tab>Tweets</Tab>
+            <Tweets>
                 <Tweet />
                 <Tweet />
                 <Tweet />
                 <Tweet />
             </Tweets>
-        </Tab>
     </Container>
   )
 }
