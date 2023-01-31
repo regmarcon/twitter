@@ -8,7 +8,7 @@ export const Container = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        position: sticky; // para ficar grudada na tela
+        position: sticky; // para figit car grudada na tela
         top:0;
         left: 0;
         padding: 9px 19px 20px;
@@ -123,3 +123,20 @@ export const Avatar = styled.div`
   border-radius: 50%;
   background: var(--gray);
 `;
+export const ExitIcon = styled(ExitToApp)`
+  display: none;
+  @media (min-width: 1280px) {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    color: var(--white);
+    margin-left: 30px;
+    cursor: pointer;
+    &:hover {
+      > path {
+        color: var(--like);
+      }
+    }
+  }
+`;
+
